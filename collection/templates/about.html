@@ -1,0 +1,50 @@
+{% extends 'layouts/base.html' %}
+{% load staticfiles %}
+{% block title %}About{{ block.super }}{% endblock %} 
+
+{% block about-content %}
+<div class="container">
+	<h2>About</h2>
+    <div class="row">
+        <div class="col-sm-12 col-md-8">
+            <p>Aliquam vulputate ut mauris at malesuada. Sed ac vestibulum mi. Nunc et sapien rutrum, vestibulum erat ut, maximus nunc. Curabitur venenatis nisi eget tempor molestie. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris luctus augue nec rutrum vehicula. Pellentesque eget elit ut lectus mollis elementum a a mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquet sagittis magna, eget luctus odio posuere a.</p>
+            <p>Curabitur et dictum eros, non scelerisque nunc. Quisque tempor, eros ac finibus posuere, quam purus volutpat leo, viverra dignissim orci purus nec ante. Suspendisse sit amet vestibulum odio. Mauris scelerisque eros ut accumsan suscipit. Phasellus mauris ligula, varius quis quam eu, mattis laoreet arcu. Suspendisse scelerisque suscipit tristique. Fusce ut vehicula ligula. Nulla condimentum justo vitae facilisis ultrices.</p>
+        </div>
+        <div class="col-sm-12 col-md-4">
+            <div id="family-portrait">
+                <img src="images/family.jpg" class="img-responsive" alt="family portrait">
+            </div>
+
+        </div>
+    </div>
+
+
+    <h2>Customer Testimonials</h2>
+    <div class="row">
+    	<div class="col-md-5">
+    		<div class="flex">
+	    		<img src="images/kitten.jpg">
+				<i class="fa fa-quote-left"></i>
+				<p>Curabitur et dictum eros, non scelerisque nunc. Quisque tempor, eros ac finibus posuere, quam purus volutpat leo, viverra dignissim orci purus nec ante. Suspendisse sit amet vestibulum odio. <i class="fa fa-quote-right"></i> - Kitty</p>
+			</div>
+		</div>
+
+		<div class="col-md-5 col-md-offset-1">
+			<div class="flex">
+				<img src="images/kitten.jpg">
+				<i class="fa fa-quote-left"></i>
+				<p>Curabitur et dictum eros, non scelerisque nunc. Quisque tempor, eros ac finibus posuere, quam purus volutpat leo, viverra dignissim orci purus nec ante. Suspendisse sit amet vestibulum odio. <i class="fa fa-quote-right"></i> - Kitty</p>
+			</div>
+    	</div>
+    </div>
+    <div class="row">
+    	<div class="col-sm-12">
+	    	<h2>In the Community</h2>
+	    	<p>Mauris scelerisque eros ut accumsan suscipit. Phasellus mauris ligula, varius quis quam eu, mattis laoreet arcu.</p>
+	    </div>
+	</div>
+</div>
+{% endblock about-content %}
+
+{% block end-link %}
+{% endblock end-link %}

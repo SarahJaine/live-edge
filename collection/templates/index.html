@@ -1,11 +1,66 @@
+{% extends 'layouts/base.html' %}
 {% load staticfiles %}
-<!doctype html> 
-<html>
-<head>
-	<title>My Hello Web App Project</title> 
-	<link rel="stylesheet" href="{% static 'css/style.css' %}"/>
-</head>
-<body>
-<h1>Hello World!</h1>
-<p>I am a basic website.</p>
-</body> </html>
+{% block title %}Home{{ block.super }}{% endblock %} 
+
+{% block bg-image %}
+<div class="bg-image">
+	<div class="container">
+		<div id="bg-image-text">
+			<h1>Live Edge Studio</h1>
+			<p>furniture that’s built for life</p>
+		</div>
+	</div>
+</div>
+{% endblock bg-image %}
+
+
+{% block home-gallery %}
+<div id="home-gallery">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
+				<img src="{% static 'images/vanity.jpg' %}" class="img-responsive">
+			</div>
+			<div class="col-xs-12 col-sm-5 col-md-5 col-lg-2">
+				<div class="row">
+					<div class="col-xs-12">
+						<img src="{% static 'images/vanity.jpg' %}" class="img-responsive">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<img src="{% static 'images/vanity.jpg' %}" class="img-responsive">
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
+				<img src="{% static 'images/vanity.jpg' %}" class="img-responsive">
+			</div>
+			<div class="col-xs-12 col-sm-5 col-md-5 col-lg-2">
+				<div class="row">
+					<div class="col-xs-6">
+						<img src="{% static 'images/vanity.jpg' %}" class="img-responsive">
+					</div>
+					<div class="col-xs-6">
+						<img src="{% static 'images/vanity.jpg' %}" class="img-responsive">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<img src="{% static 'images/vanity.jpg' %}" class="img-responsive">
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock home-gallery %}
+
+{% block end-link %}
+<div class="container-fluid">
+	<div id="gallery-link">
+		<p>See more products in our <a href="/gallery/">gallery</a>.</p>
+	</div>
+</div>
+{% endblock end-link %}

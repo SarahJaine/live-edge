@@ -1,3 +1,98 @@
 body {
-	background-color: gray;
+	background-color: #F7F4EA;
+	color: #2E0E02;
+}
+
+.bg-image {
+	/*background-image: url('../images/wood_fallen.jpg');*/
+	background-position: center center;
+	background-size: cover;
+	min-height: 42vh;
+	font-family: 'Lato', Helvetica;
+}
+
+h1 {
+	font-family: 'Averia Gruesa Libre', sans-serif;
+}
+
+h2 {
+	font-family: 'Lato', Helvetica, sans-serif;	
+}
+
+p {
+	font-family: Helvetica, sans-serif;
+}
+
+/*persistant navigation*/
+.row-menu {
+	background-color: black;
+	opacity: .8;
+	height: 8vh;
+	display: flex;
+	align-items: center;
+}
+
+
+#logo p {
+	background-color: blue;
+	text-align: left;
+	margin: 0;
+}
+
+#nav {
+	text-align: center;
+}
+#nav a {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#social {
+	text-align: right;
+}
+#social i {
+	padding-left: 15px;
+}
+
+/*home page*/
+
+#bg-image-text {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	height: 40vh;
+}
+
+#home-gallery {
+	min-height: 10vh;
+}
+img {
+	/*max-width: 100%;*/
+	/*max-height: 100%;*/
+	/*padding-top: 10px;*/
+	padding-bottom: 20px;
+
+}
+/*img {
+	display: inline-block;
+	height: auto;
+	max-width: 100%;
+ }*/
+
+
+/*about page*/
+
+#family-portrait {
+	padding-top: 10px;
+}
+
+.flex {
+	display: flex;
+}
+
+/*contact page*/
+i.glyphicon-ok {
+	padding: 0px;
+	padding-left: 5px;
 }
