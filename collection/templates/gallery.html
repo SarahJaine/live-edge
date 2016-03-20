@@ -3,8 +3,93 @@
 {% block title %}Gallery{{ block.super }}{% endblock %} 
 
 {% block gallery-content %}
+<div class="container-fluid">
+	<h2>Gallery</h2>
+	<p>Ut semper eros et augue sollicitudin, bibendum posuere quam lacinia. Donec malesuada facilisis iaculis. Curabitur orci est, eleifend a dapibus id, semper eu magna.</p>
+	
+	<div id="gallery-custom">
+		<h3>Custom Products</h3>
+			<div class="col-xs-12 col-sm-4 col-lg-2">
+				<img src="{% static 'images/vanity.jpg' %}" class="img-responsive">
+			</div>
+			<div class="col-xs-12 col-sm-4 col-lg-2">
+				<img src="{% static 'images/vanity.jpg' %}" class="img-responsive">
+			</div>
+			<div class="col-xs-12 col-sm-4 col-lg-2">
+				<img src="{% static 'images/vanity.jpg' %}" class="img-responsive">
+			</div>
+			<div class="col-xs-12 col-sm-4 col-lg-2">
+				<img src="{% static 'images/vanity.jpg' %}" class="img-responsive">
+			</div>
+			<div class="col-xs-12 col-sm-4 col-lg-2">
+				<img src="{% static 'images/vanity.jpg' %}" class="img-responsive">
+			</div>
+			<div class="col-xs-12 col-sm-4 col-lg-2">
+				<img src="{% static 'images/vanity.jpg' %}" class="img-responsive">
+			</div>
+		</div>
+	<div id="gallery-table">
+		<h3>Tables and Sideboards</h3>
 
+		<div class="col-xs-12 col-sm-4 col-lg-2">
+			<img src="{% static 'images/vanity.jpg' %}" class="img-responsive">
+		</div>
+		<div class="col-xs-12 col-sm-4 col-lg-2">
+			<img src="{% static 'images/vanity.jpg' %}" class="img-responsive">
+		</div>
+		<div class="col-xs-12 col-sm-4 col-lg-2">
+			<img src="{% static 'images/vanity.jpg' %}" class="img-responsive">
+		</div>
+		<div class="col-xs-12 col-sm-4 col-lg-2">
+			<img src="{% static 'images/vanity.jpg' %}" class="img-responsive">
+		</div>
+		<div class="col-xs-12 col-sm-4 col-lg-2">
+			<img src="{% static 'images/vanity.jpg' %}" class="img-responsive">
+		</div>
+		<div class="col-xs-12 col-sm-4 col-lg-2">
+			<img src="{% static 'images/vanity.jpg' %}" class="img-responsive">
+		</div>
+	</div>
+	
+	<div id="gallery-decore">
+		<h3>Decore and Accent Pieces</h3>
+
+		<div class="col-xs-12 col-sm-4 col-lg-2">
+			<img src="{% static 'images/vanity.jpg' %}" class="img-responsive">
+		</div>
+		<div class="col-xs-12 col-sm-4 col-lg-2">
+			<img src="{% static 'images/vanity.jpg' %}" class="img-responsive">
+		</div>
+		<div class="col-xs-12 col-sm-4 col-lg-2">
+			<img src="{% static 'images/vanity.jpg' %}" class="img-responsive">
+		</div>
+		<div class="col-xs-12 col-sm-4 col-lg-2">
+			<img src="{% static 'images/vanity.jpg' %}" class="img-responsive">
+		</div>
+		<div class="col-xs-12 col-sm-4 col-lg-2">
+			<img src="{% static 'images/vanity.jpg' %}" class="img-responsive">
+		</div>
+		<div class="col-xs-12 col-sm-4 col-lg-2">
+			<img src="{% static 'images/vanity.jpg' %}" class="img-responsive">
+		</div>
+	</div>
+</div>
 {% endblock gallery-content %}
 
 {% block end-link %}
+<div class="container-fluid">
+	<div id="gallery-link">
+		<p>Don't see the furniture of your dreams?<a href="/contact/">Contact us</a> about custom pieces.</p>
+	</div>
+</div>
 {% endblock end-link %}
+<!-- The amount of images in each section of the gallery and the size of images may increase or decrease depending on the amount of images available.  I will try to maintain visual balance on the page.
+
+Custom Products (5 products total): Radiator cover, vanities (2), cabinet, desk, TV unit
+
+Tables and Sideboards (5 products total): coffee tables (2), farmhouse dinning table, sideboard, shaker table
+
+Decore and Accent Pieces (4 products total): Coasters, sculpture, shelves, wall art
+
+
+Page ending "call to action" is link to Contact page. -->
