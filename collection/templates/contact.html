@@ -3,7 +3,74 @@
 {% block title %}Contact{{ block.super }}{% endblock %} 
 
 {% block contact-content %}
+<div class="container">
+    <h2>Contact Us</h2>
+	<form role="form" action="" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit</button>
+    </form>
+</div>
+<!-- <div class="container">
+    <h2>Contact Us</h2>
+    <div class="row">
+        <div class="col-xs-12 col-sm-7">
+            <p>Ut semper eros et augue sollicitudin, bibendum posuere quam lacinia. Donec malesuada facilisis iaculis. Curabitur orci est, eleifend a dapibus id, semper eu magna.</p>
 
+            <div class="alert alert-success">
+                <strong><span class="glyphicon glyphicon-send"></span> Success! Message sent.</strong>
+            </div>   
+            <div class="alert alert-danger">
+                <span class="glyphicon glyphicon-alert"></span><strong> Error! Please check the inputs.</strong>
+            </div>
+
+            <form role="form" action="" method="post">
+                <div class="well well-sm">
+                    <strong><i class="glyphicon glyphicon-ok form-control-feedback"></i> Required Field</strong>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <label class="sr-only" for="contact_name">Enter Name</label>
+                        <input type="text" class="form-control" name="contact_name" id="contact_name" placeholder="Enter Name" required>
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <label class="sr-only" for="contact_email">Enter Email</label>
+                        <input type="email" class="form-control" id="contact_email" name="contact_email" placeholder="Enter Email" required>
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <label class="sr-only" for="content">Message</label>
+                        <textarea name="content" id="content" placeholder="Message" class="form-control" rows="5" required></textarea>
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <label class="sr-only" for="contact_real">What is 4+3? (Simple Spam Checker)</label>
+                        <input type="text" class="form-control" name="contact_real" placeholder="What is 4+3? (Simple Spam Checker)" id="contact_real" required>
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+                    </div>
+                </div>
+                <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right">
+            </form>
+        </div> -->
+
+        <div class="col-xs-12 col-sm-offset-1 col-sm-4">
+            <hr class="featurette-divider visible-xs">
+            <adress>
+                <h3>Live Edge Studio</h3>
+                <p>located in Washington DC</p>
+                <a href="mailto:james@liveedgestudio.com"target="_blank"><p><i class="glyphicon glyphicon-envelope"></i>james@liveedgestudio.com</p></a>
+                <p><i class="fa fa-phone"></i> (301) 767-7257</p>
+            </adress>
+        </div>
+    <!-- </div> -->
+<!-- </div> -->
 {% endblock contact-content %}
 
 {% block end-link %}

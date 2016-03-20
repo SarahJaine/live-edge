@@ -1,4 +1,4 @@
-"""liveedge URL Configuration
+"""live-edge URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/1.9/topics/http/urls/
@@ -15,9 +15,9 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from collection import views
-from django.views.generic import TemplateView
 
+from django.views.generic import TemplateView
+from collection import views
 
 urlpatterns = [
 	url(r'^$', views.index, name='home'),
@@ -27,8 +27,6 @@ urlpatterns = [
 	url(r'^gallery/$',
 		TemplateView.as_view(template_name='gallery.html'),
 		name='gallery'), 
-	url(r'^contact/$',
-		TemplateView.as_view(template_name='contact.html'),
-		name='contact'),
+	url(r'^contact/$', views.contact, name='contact'),
     url(r'^admin/', admin.site.urls),
 ]
