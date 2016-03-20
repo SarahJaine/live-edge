@@ -16,7 +16,8 @@ h1 {
 }
 
 h2 {
-	font-family: 'Lato', Helvetica, sans-serif;	
+	font-family: 'Lato', Helvetica, sans-serif;
+	padding-top: 5vh;	
 }
 
 p {
@@ -61,6 +62,17 @@ a:hover {
 	background-color: red;
 }
 
+.success {
+	background-color: green;
+	opacity: .8;
+	font-weight: bold,
+}
+
+.danger {
+	background-color: red;
+	opacity: .8;
+	font-weight: bold,
+}
 
 
 /*home page*/
@@ -107,3 +119,8 @@ i.glyphicon-ok {
 	padding: 0px;
 	padding-left: 5px;
 }
+
+h3 {
+	padding-top: 10vh;
+}
+

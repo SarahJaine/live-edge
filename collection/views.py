@@ -1,11 +1,10 @@
+from django.contrib import messages
 from django.template.loader import get_template 
 from django.core.mail import EmailMessage
 from django.template import Context
 
 from django.shortcuts import render, redirect
 from collection.forms import ContactForm
-
-
 
 
 # Create your views here.
@@ -37,11 +36,17 @@ def contact(request):
 			email = EmailMessage(
 				'New contact form submission', 
 				content,
-				'Your website <hi@weddinglovely.com>', 
+				'Your website', 
 				['youremail@gmail.com'],
 				headers = {'Reply-To': contact_email }
 			)
 			email.send()
+			messages.success(request, "Success! Message sent.")
+			return redirect('contact')
+		else:
+			# for key, value in form.errors:
+			# 	messages.error(request, form.errors[value])
+			messages.error(request, "Error! Please check the inputs.")
 			return redirect('contact')
 
 	return render(request, 'contact.html', { 
