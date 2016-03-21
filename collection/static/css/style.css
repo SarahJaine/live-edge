@@ -17,7 +17,7 @@ h1 {
 
 h2 {
 	font-family: 'Lato', Helvetica, sans-serif;
-	padding-top: 5vh;	
+	/*padding-top: 5vh;	*/
 }
 
 p {
@@ -30,12 +30,16 @@ a:hover {
 
 /*persistant navigation*/
 
+
 .row-menu {
 	background-color: black;
 	opacity: .8;
 	height: 8vh;
 	display: flex;
 	align-items: center;
+
+	margin-bottom: 3vh;
+
 }
 
 #logo p {
@@ -46,6 +50,7 @@ a:hover {
 #nav {
 	text-align: center;
 }
+
 #nav a {
 	padding-left: 10px;
 	padding-right: 10px;
@@ -121,6 +126,12 @@ i.glyphicon-ok {
 }
 
 h4 {
-	padding-top: 10vh;
+	padding-top: 3vh;
 }
 
+hr {
+	padding-top: 5vh;
+	opacity: .3;
+	border-style: solid none;
+  	border-width: 1px 0;
+}
