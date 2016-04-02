@@ -135,3 +135,7 @@ hr {
 	border-style: solid none;
   	border-width: 1px 0;
 }
+
+div .form-control {
+
+	width: 100px;

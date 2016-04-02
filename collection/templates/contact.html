@@ -6,7 +6,7 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-7">
+        <div class="col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-6">
             <h2>Contact Us</h2>
             <p>Ut semper eros et augue sollicitudin, bibendum posuere quam lacinia. Donec malesuada facilisis iaculis. Curabitur orci est, eleifend a dapibus id, semper eu magna.</p>
             {% if messages %} 
@@ -21,37 +21,29 @@
             {% endif %}
             <form role="form" action="" method="post">
             {% csrf_token %}
-<!--                 <div class="well well-sm">
-                    <strong> Required Field</strong><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
-                </div> -->
-                <div class="form-group">
-                    <div class="input-group">
+                <div class="form-group row">
+                    <div class="input-group col-xs-12">
                         <label class="sr-only" for="contact_name">Your Name</label>
                         <input type="text" class="form-control" name="contact_name" id="contact_name" placeholder="Your Name" required>
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
                     </div>
                 </div>
-                <div class="form-group">
-                    <div class="input-group">
+                <div class="form-group row">
+                    <div class="input-group col-xs-12">
                         <label class="sr-only" for="contact_email">Your Email Address</label>
                         <input type="email" class="form-control" id="contact_email" name="contact_email" placeholder="Your Email Address" required>
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
                     </div>
                 </div>
-                <div class="form-group">
-                    <div class="input-group">
+                <div class="form-group row">
+                    <div class="input-group col-xs-12">
                         <label class="sr-only" for="content">Message</label>
                         <textarea name="content" id="content" placeholder="Message" class="form-control" rows="5" required></textarea>
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
                     </div>
                 </div>
-     
-
                 <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right">
             </form>
         </div>
 
-        <div class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-4">
+        <div class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-4">
             <hr class="featurette-divider visible-xs">
             <adress>
                 <h4>Live Edge Studio</h4>
